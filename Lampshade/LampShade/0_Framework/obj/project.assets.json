@@ -8,24 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Abolfazl\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\1014382\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\asp\\LampShade\\Lampshade\\LampShade\\0_Framework\\0_Framework.csproj",
+      "projectUniqueName": "D:\\myself\\asp\\LampShade\\Lampshade\\LampShade\\0_Framework\\0_Framework.csproj",
       "projectName": "0_Framework",
-      "projectPath": "D:\\asp\\LampShade\\Lampshade\\LampShade\\0_Framework\\0_Framework.csproj",
-      "packagesPath": "C:\\Users\\Abolfazl\\.nuget\\packages\\",
-      "outputPath": "D:\\asp\\LampShade\\Lampshade\\LampShade\\0_Framework\\obj\\",
+      "projectPath": "D:\\myself\\asp\\LampShade\\Lampshade\\LampShade\\0_Framework\\0_Framework.csproj",
+      "packagesPath": "C:\\Users\\1014382\\.nuget\\packages\\",
+      "outputPath": "D:\\myself\\asp\\LampShade\\Lampshade\\LampShade\\0_Framework\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Abolfazl\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\1014382\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -65,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.115\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.109\\RuntimeIdentifierGraph.json"
       }
     }
   }

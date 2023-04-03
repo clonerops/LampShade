@@ -1,0 +1,15 @@
+D:\myself\asp\LampShade\Lampshade\LampShade\ShopManagment.Domain\bin\Debug\net5.0\ShopManagment.Domain.deps.json
+D:\myself\asp\LampShade\Lampshade\LampShade\ShopManagment.Domain\bin\Debug\net5.0\ShopManagment.Domain.dll
+D:\myself\asp\LampShade\Lampshade\LampShade\ShopManagment.Domain\bin\Debug\net5.0\ref\ShopManagment.Domain.dll
+D:\myself\asp\LampShade\Lampshade\LampShade\ShopManagment.Domain\bin\Debug\net5.0\ShopManagment.Domain.pdb
+D:\myself\asp\LampShade\Lampshade\LampShade\ShopManagment.Domain\bin\Debug\net5.0\0_Framework.dll
+D:\myself\asp\LampShade\Lampshade\LampShade\ShopManagment.Domain\bin\Debug\net5.0\0_Framework.pdb
+D:\myself\asp\LampShade\Lampshade\LampShade\ShopManagment.Domain\obj\Debug\net5.0\ShopManagment.Domain.csproj.AssemblyReference.cache
+D:\myself\asp\LampShade\Lampshade\LampShade\ShopManagment.Domain\obj\Debug\net5.0\ShopManagment.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\myself\asp\LampShade\Lampshade\LampShade\ShopManagment.Domain\obj\Debug\net5.0\ShopManagment.Domain.AssemblyInfoInputs.cache
+D:\myself\asp\LampShade\Lampshade\LampShade\ShopManagment.Domain\obj\Debug\net5.0\ShopManagment.Domain.AssemblyInfo.cs
+D:\myself\asp\LampShade\Lampshade\LampShade\ShopManagment.Domain\obj\Debug\net5.0\ShopManagment.Domain.csproj.CoreCompileInputs.cache
+D:\myself\asp\LampShade\Lampshade\LampShade\ShopManagment.Domain\obj\Debug\net5.0\ShopManagment.Domain.csproj.CopyComplete
+D:\myself\asp\LampShade\Lampshade\LampShade\ShopManagment.Domain\obj\Debug\net5.0\ShopManagment.Domain.dll
+D:\myself\asp\LampShade\Lampshade\LampShade\ShopManagment.Domain\obj\Debug\net5.0\ref\ShopManagment.Domain.dll
+D:\myself\asp\LampShade\Lampshade\LampShade\ShopManagment.Domain\obj\Debug\net5.0\ShopManagment.Domain.pdb

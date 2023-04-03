@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _0_Framework.Application;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,9 @@ namespace ShopManagment.Application.Contract.ProductCategory
 {
     public interface IProductCategoryApplication
     {
-        void Create(CreateProductCategory command);
-        void Edit(EditProductCategory command);
-        //Domain.ProductCategoryAgg.ProductCategory GetDatils(long id);
+        OperationResult Create(CreateProductCategory command);
+        OperationResult Edit(EditProductCategory command);
+        EditProductCategory GetDatils(long id);
         List<ProductCategoryViewModel> Search(ProductCategorySearchModel searchModel);
     }
 }
