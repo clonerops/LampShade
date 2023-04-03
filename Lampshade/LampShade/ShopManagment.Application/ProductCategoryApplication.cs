@@ -36,7 +36,7 @@ namespace ShopManagment.Application
         public OperationResult Edit(EditProductCategory command)
         {
             var operation = new OperationResult();
-            var productCategory = _productCategoryRepository.GetById(command.Id);
+            var productCategory = _productCategoryRepository.Get(command.Id);
             
             if(productCategory == null)
                 return operation.Failure("رکورد موردنظر یافت نشد!");
