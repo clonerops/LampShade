@@ -43,6 +43,7 @@ namespace ShopManagment.Infrastructure.EFCore.Repository
                 Id = x.Id,
                 Description = x.Description,
                 Name = x.Name,
+                Picture = x.Picture,
                 CreationDate = x.CreationDate.ToString()
             });
             if(!string.IsNullOrWhiteSpace(searchModel.Name))

@@ -157,3 +157,6 @@ D:\myself\asp\LampShade\Lampshade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\A
 D:\myself\asp\LampShade\Lampshade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Shop\ProductCategories\Index.cshtml.g.cs
 D:\myself\asp\LampShade\Lampshade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\_ViewImports.cshtml.g.cs
 D:\myself\asp\LampShade\Lampshade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\_ViewStart.cshtml.g.cs
+D:\myself\asp\LampShade\Lampshade\LampShade\ServiceHost\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\myself\asp\LampShade\Lampshade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Shop\ProductCategories\Create.cshtml.g.cs
+D:\myself\asp\LampShade\Lampshade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Shop\ProductCategories\Edit.cshtml.g.cs
