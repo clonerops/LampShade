@@ -33,6 +33,10 @@ namespace ServiceHost.Areas.Admin.Pages.Shop.ProductCategories
         {
             var product = productCategoryApplication.GetDatils(id);
             return Partial("./Edit", product);
+        } public JsonResult OnPostEdit(EditProductCategory command)
+        {
+            var result = productCategoryApplication.Edit(command);
+            return new JsonResult(result);
         }
     }
 }

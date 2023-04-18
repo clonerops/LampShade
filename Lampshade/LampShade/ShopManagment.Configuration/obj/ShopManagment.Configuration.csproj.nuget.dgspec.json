@@ -151,6 +151,9 @@
               },
               "D:\\myself\\asp\\LampShade\\Lampshade\\LampShade\\ShopManagment.Domain\\ShopManagment.Domain.csproj": {
                 "projectPath": "D:\\myself\\asp\\LampShade\\Lampshade\\LampShade\\ShopManagment.Domain\\ShopManagment.Domain.csproj"
+              },
+              "D:\\myself\\asp\\LampShade\\Lampshade\\LampShade\\ShopManagment.Infrastructure.EFCore\\ShopManagment.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\myself\\asp\\LampShade\\Lampshade\\LampShade\\ShopManagment.Infrastructure.EFCore\\ShopManagment.Infrastructure.EFCore.csproj"
               }
             }
           }
