@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using ShopManagment.Domain.ProductAgg;
+using ShopManagment.Domain.ProductCategoryAgg;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,10 @@ namespace ShopManagment.Infrastructure.EFCore.Mapping
             builder.Property(x => x.Keywords).HasMaxLength(80).IsRequired();
             builder.Property(x => x.MetaData).HasMaxLength(150).IsRequired();
             builder.Property(x => x.Slug).HasMaxLength(150).IsRequired();
+
+            builder.HasOne(x => x.Category)
+                .WithMany(x => x.Products)
+                .HasForeignKey(x => x.CategoryId);
 
         }
 

@@ -20,7 +20,7 @@ namespace ShopManagment.Application.Contract.Product
         public string MetaData { get; set; }
         public string Keywords { get; set; }
         public string Slug { get; set; }
-        public int CategoryId { get; set; }
+        public long CategoryId { get; set; }
 
     }
 }

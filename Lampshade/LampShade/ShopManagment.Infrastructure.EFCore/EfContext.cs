@@ -8,7 +8,7 @@ namespace ShopManagment.Infrastructure.EFCore
 {
     public class EfContext : DbContext
     {
-        public DbSet<Product> products { get; set; }
+        public DbSet<Product> Products { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
         public EfContext(DbContextOptions<EfContext> options) : base(options)
         {
