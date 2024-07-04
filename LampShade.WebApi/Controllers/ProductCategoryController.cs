@@ -34,5 +34,15 @@ namespace LampShade.WebApi.Controllers
         {
             _productCategoryApplication.Create(command);
         }
+
+        /// <summary>
+        /// ویرایش دسته محصول
+        /// </summary>
+        /// <param name="command"></param>
+        [HttpPut("{id}")]
+        public void EditProductCategory([FromBody] EditProductCategory command)
+        {
+             _productCategoryApplication.Edit(command);
+        }
     }
 }
