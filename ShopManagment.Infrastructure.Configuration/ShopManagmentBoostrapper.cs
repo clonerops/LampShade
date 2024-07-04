@@ -10,7 +10,7 @@ namespace ShopManagment.Infrastructure.Configuration
 {
     public class ShopManagmentBoostrapper
     {
-        public void Configuration(IServiceCollection services, string connectionString)
+        public static void Configure(IServiceCollection services, string connectionString)
         {
             services.AddTransient<IProductCategoryApplication, ProductCategoryApplication>();
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
