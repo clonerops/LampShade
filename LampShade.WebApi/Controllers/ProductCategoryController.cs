@@ -14,6 +14,16 @@ namespace LampShade.WebApi.Controllers
         {
             _productCategoryApplication = productCategoryApplication;
         }
+        /// <summary>
+        /// ایجاد دسته بندی محصول
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        public JsonResult CreateProductCategory([FromBody] CreateProductCategory command)
+        {
+            var result = _productCategoryApplication.Create(command);
+            return new JsonResult(result);
+        }
 
         /// <summary>
         /// لیست تمامی دسته بندی های محصول
@@ -26,23 +36,36 @@ namespace LampShade.WebApi.Controllers
         }
 
         /// <summary>
-        /// ایجاد دسته بندی محصول
+        /// دریافت جزئیات دسته بندی محصول براساس کد یونیک
         /// </summary>
+        /// <param name="id"></param>
         /// <returns></returns>
-        [HttpPost]
-        public void CreateProductCategory([FromBody] CreateProductCategory command)
+        [HttpGet("{id:long}")]
+        public ProductCategoryViewModel GetProductCategoryById(long id)
         {
-            _productCategoryApplication.Create(command);
+            return _productCategoryApplication.GetBy(id);
         }
 
         /// <summary>
         /// ویرایش دسته محصول
         /// </summary>
         /// <param name="command"></param>
-        [HttpPut("{id}")]
-        public void EditProductCategory([FromBody] EditProductCategory command)
+        [HttpPut("{id:long}")]
+        public JsonResult EditProductCategory([FromBody] EditProductCategory command)
         {
-             _productCategoryApplication.Edit(command);
+           var result =  _productCategoryApplication.Edit(command);
+           return new JsonResult(result);
+        }
+        /// <summary>
+        /// حذف منطقی دسته بندی محصول
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete("{id:long}")]
+        public JsonResult DeleteProductCategory([FromRoute] long id)
+        {
+            var result = _productCategoryApplication.Delete(id);
+            return new JsonResult(result);
         }
     }
 }

@@ -9,6 +9,8 @@ namespace ShopManagment.Application.contracts.ProductCategory.contract
         List<ProductCategoryViewModel> Search(SearchProductCategory name);
         List<ProductCategoryViewModel> List();
         EditProductCategory GetDetails(long id);
+        OperationResult Delete(long id);
+        ProductCategoryViewModel GetBy(long id);
 
     }
 }
