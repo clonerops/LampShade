@@ -18,6 +18,10 @@ namespace ShopManagment.Infrastructure.EFCore.Mapping
             builder.Property(x => x.MetaDescription);
             builder.Property(x => x.Keyword);
             builder.Property(x => x.Slug);
+
+            builder.HasMany(x => x.Products)
+                .WithOne(x => x.ProductCategory)
+                .HasForeignKey(x => x.ProductCategoryId);
         }
     }
 }
