@@ -1,7 +1,11 @@
-﻿namespace ShopManagment.Application.contracts.ProductCategory
+﻿using _0_Framework.Application;
+using System.ComponentModel.DataAnnotations;
+
+namespace ShopManagment.Application.contracts.ProductCategory
 {
     public class CreateProductCategory
     {
+        [Required(ErrorMessage = ValidationMessage.IsRequired)]
         public string Name { get; set; }
         public string Description { get; set; }
         public string Picture { get; set; }
