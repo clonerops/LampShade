@@ -8,6 +8,7 @@ namespace ShopManagment.Application.contracts.Product
         OperationResult Edit(EditProduct command);
         List<ProductViewModel> GetProducts();
         ProductViewModel GetProduct(long id);
+        OperationResult Remove(long id);
     }
 
 }

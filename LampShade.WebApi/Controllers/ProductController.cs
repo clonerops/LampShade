@@ -49,10 +49,27 @@ namespace LampShade.WebApi.Controllers
             return _productApplication.GetProduct(id);
         }
 
+        /// <summary>
+        /// ویرایش محصول
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
         [HttpPut("{id:long}")]
         public JsonResult EditProduct([FromBody] EditProduct command)
         {
             var result = _productApplication.Edit(command);
+            return new JsonResult(result);
+        }
+
+        /// <summary>
+        /// حذف منظقی محصول 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete("{id:long}")]
+        public JsonResult DeleteProduct([FromRoute] long id)
+        {
+            var result = _productApplication.Remove(id);
             return new JsonResult(result);
         }
     }

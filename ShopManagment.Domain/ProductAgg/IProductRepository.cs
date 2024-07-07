@@ -12,5 +12,6 @@ namespace ShopManagment.Domain.ProductAgg
     {
         List<ProductViewModel> GetProducts();
         ProductViewModel GetProduct(long id);
+
     }
 }

@@ -57,5 +57,20 @@ namespace ShopManagment.Application
         {
             return _productRepository.GetProducts();
         }
+
+        public OperationResult Remove(long id)
+        {
+            var operation = new OperationResult();
+            var product = _productRepository.Get(id);
+
+            if (product == null)
+                return operation.Failed("محصولی با این مشخصات یافت نشد");
+
+            product.Remove();
+            _productRepository.SaveChanges();
+
+            return operation.Succedded();
+
+        }
     }
 }

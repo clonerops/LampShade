@@ -25,5 +25,10 @@ namespace ShopManagment.Domain.ProductAgg
             Description = description;
             ProductCategoryId = productCategoryId;
         }
+
+        public void Remove()
+        {
+            IsDeleted = true;
+        }
     }
 }

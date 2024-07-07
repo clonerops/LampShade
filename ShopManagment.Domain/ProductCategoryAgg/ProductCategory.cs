@@ -45,5 +45,10 @@ namespace ShopManagment.Domain.ProductCategoryAgg
             MetaDescription = metaDescription;
             Slug = slug;
         }
+
+        public void Removed()
+        {
+            IsDeleted = true;
+        }
     }
 }
