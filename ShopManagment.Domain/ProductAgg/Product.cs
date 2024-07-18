@@ -1,5 +1,6 @@
 ﻿using _0_Framework.Domain;
 using ShopManagment.Domain.ProductCategoryAgg;
+using ShopManagment.Domain.ProductPictureAgg;
 
 namespace ShopManagment.Domain.ProductAgg
 {
@@ -10,6 +11,7 @@ namespace ShopManagment.Domain.ProductAgg
         public bool IsInStock { get; set; }
         public long ProductCategoryId { get; set; }
         public ProductCategory ProductCategory { get; set; }
+        public List<ProductPicture> ProductPictures { get; set; }
 
         public Product(string name, string description, long productCategoryId)
         {
