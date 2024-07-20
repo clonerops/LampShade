@@ -15,36 +15,73 @@ namespace ShopManagment.Application
 
         public OperationResult Create(CreateProductPicture command)
         {
-            var opeartion = new OperationResult();
+            var operation = new OperationResult();
 
             if (_productPictureRepository.Exist(x => x.ProductId == command.ProductId && x.PictureUrl == command.PictureUrl))
-                return opeartion.Failed("رکورد تکراری می باشد");
+                return operation.Failed("رکورد تکراری می باشد");
 
             var productPicture = new ProductPicture(command.ProductId, command.PictureAlt, command.PictureTitle, command.PictureUrl);
             _productPictureRepository.Create(productPicture);
             _productPictureRepository.SaveChanges();
-            return opeartion.Succedded();
+            return operation.Succedded();
             
         }
 
         public OperationResult Edit(EditProductPicture command)
         {
-            throw new NotImplementedException();
+            var operation = new OperationResult();
+
+            var productPicture = _productPictureRepository.Get(command.Id);
+
+            if (productPicture == null)
+                return operation.Failed("رکورد پیدا نشد");
+
+            productPicture.Edit(command.ProductId, command.PictureAlt, command.PictureTitle, command.PictureUrl);
+            _productPictureRepository.SaveChanges();
+            return operation.Succedded();
+
+        }
+
+        public ProductPictureViewModel GetBy(long Id)
+        {
+            return _productPictureRepository.GetBy(Id);
+        }
+
+        public List<ProductPictureViewModel> List()
+        {
+            return _productPictureRepository.List();
         }
 
         public OperationResult Remove(long Id)
         {
-            throw new NotImplementedException();
+            var operation = new OperationResult();
+
+            var productPicture = _productPictureRepository.Get(Id);
+
+            if (productPicture == null)
+                return operation.Failed("رکورد پیدا نشد");
+            productPicture.Remove();
+            _productPictureRepository.SaveChanges();
+            return operation.Succedded();
+
         }
 
         public OperationResult Restore(long Id)
         {
-            throw new NotImplementedException();
+            var operation = new OperationResult();
+            
+            var productPicture = _productPictureRepository.Get(Id);
+
+            if (productPicture == null)
+                return operation.Failed("رکورد پیدا نشد");
+            productPicture.Restore();
+            _productPictureRepository.SaveChanges();
+            return operation.Succedded();
         }
 
         public List<ProductPictureViewModel> Search(ProductPictureSearchModel searchModel)
         {
-            throw new NotImplementedException();
+            return _productPictureRepository.Search(searchModel);
         }
     }
 }

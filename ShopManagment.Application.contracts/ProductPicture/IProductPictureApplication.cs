@@ -8,6 +8,8 @@ namespace ShopManagment.Application.contracts.ProductPicture
         OperationResult Edit(EditProductPicture command);
         OperationResult Remove(long Id);
         OperationResult Restore(long Id);
+        List<ProductPictureViewModel> List();
+        ProductPictureViewModel GetBy(long Id);
         List<ProductPictureViewModel> Search(ProductPictureSearchModel searchModel);
     }
 }
