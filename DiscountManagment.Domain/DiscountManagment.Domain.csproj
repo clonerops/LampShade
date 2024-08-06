@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DiscountManagment.Application.contracts\DiscountManagment.Application.contracts.csproj" />
+    <ProjectReference Include="D:\myself\asp\LampShade\0_Framework\0_Framework.csproj" />
+  </ItemGroup>
+
+</Project>

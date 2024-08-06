@@ -1,3 +1,4 @@
+using DiscountManagment.Infrastructure.Configuration;
 using Microsoft.OpenApi.Models;
 using ShopManagment.Infrastructure.Configuration;
 using System.Reflection;
@@ -7,6 +8,7 @@ var connectionString = builder.Configuration.GetConnectionString("LampShadeDB");
 
 // Add services to the container.
 ShopManagmentBoostrapper.Configure(builder.Services, connectionString);
+DiscountManagmentBoostrapper.Configure(builder.Services, connectionString);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -12,8 +12,8 @@ using ShopManagment.Infrastructure.EFCore;
 namespace ShopManagment.Infrastructure.EFCore.Migrations
 {
     [DbContext(typeof(ShopManagmentContext))]
-    [Migration("20240720142213_added product picutre services")]
-    partial class addedproductpicutreservices
+    [Migration("20240805095841_InitialDatabase")]
+    partial class InitialDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

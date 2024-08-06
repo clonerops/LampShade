@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "ShopManagment.Infrastructure.EFCore": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:60321;http://localhost:60322"
+    }
+  }
+}
